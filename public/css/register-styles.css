@@ -1,0 +1,40 @@
+.register-form{
+    border: 5px solid #EAC926 ;
+    font-weight: bold;
+    padding:20px;
+    line-height: 22px;
+}
+main.register {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.register-campos input {
+    width: 100%;
+    padding: 0.4em;
+    border-radius: 5px;
+    font-style: italic;
+}
+.register-form h2 {
+    font-size: 1.2em;
+}
+.register-form h1{
+    text-align: center;
+    color:#EAC926
+}
+
+.register-button{
+    text-align: center;
+}
+.register-form button {
+    background-color: #EAC926;
+    padding: 9px;
+    border-radius: 13PX;
+    margin: 6px;
+}
+.register-form button a {
+    text-decoration: none;
+    color:black
+}
+

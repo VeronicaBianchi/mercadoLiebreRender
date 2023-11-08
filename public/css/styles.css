@@ -1,0 +1,273 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+/*Estilos para body*/
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    margin: 0px;
+    background-color: #ebebeb;
+}
+
+/*Estilos para header*/
+header{
+    background-color: #EAC926;
+}
+header div img{
+    width: 37vw;
+    height: 15vh;;
+}
+.logo-bar {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+}
+header div.bar-i{
+    display:flex;
+    align-items: center;
+}
+header p{
+    text-align: center;
+}
+
+header nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+header nav ul{
+    margin: 16px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+header nav ul li a{
+    text-align: left;
+    text-decoration: none;
+    color: black;
+}
+
+div.burger-menu{
+    text-align: center;
+}
+
+div.burger-menu i {
+    background-color: #0044AA;
+    border-radius: 5px;
+    color: #FFF;
+    font-size: 24px;
+    height: 30px;
+    margin: 10px 0px;
+    padding: 1px;
+    width: 30px;
+}
+
+/*Estilos para Main*/
+main{
+    margin: auto;
+    width: 90%;
+}
+
+main section article img{
+        width: 100%;
+}
+
+main section article div{
+    background-color: white;
+    border: 1px solid #ebebeb;
+    padding: 15px;
+}
+
+article{
+    margin-bottom: 10px;
+}
+
+.product-desc-box > .product-delivery-icon{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+    }
+
+.product-desc-box {
+    position: relative;
+    }
+
+h2.titlesection{
+    color: #666;
+    font-size: 24px;
+}
+
+article i{
+    border: 1px solid #39b54a;
+    border-radius: 40px;
+    color: #39b54a;
+    padding: 10px;
+}
+
+.product-pr-off {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    align-items: baseline;
+}
+
+article p.price{
+    color:#000;
+    font-size: 18px;
+    width: 30%;
+}
+
+article p.off{
+    color:#39b54a;
+    font-size: 16px;
+    width: 70%;
+}
+
+
+h3.description{
+    color:#666;
+    font-size: 16px;
+}
+
+/*Estilos para footer*/
+
+.footer{
+    background-color: white;
+    margin: 10px;
+}
+footer section{
+    text-align: center;
+    color: #666;
+    padding: 12px;
+}
+footer section i{
+    font-size:2em;
+    color:#0044AA;
+    margin-bottom: 10px;
+    margin-top: 10px
+}
+footer section i:hover {
+    color:#EAC926;
+}
+footer section p{
+    margin: auto
+}
+footer section h3.titlefooter{
+    margin: auto;
+    font-weight: bold;
+}
+footer div p.copyright{
+    text-align: left;
+    margin-top: 10px;
+    color:#666;
+    /*Según consigna pero no queda visualmente limpio : font-size: 2em;*/
+}
+
+/*C22MD1*/
+main section article i{
+    transition: transform 1s;
+
+}
+main section article:hover {
+    box-shadow: 0px 0px 10px rgb(100,100,100);
+} 
+main section article:hover i{
+    transform: rotate(-90deg);
+}
+
+article:hover h3.description{
+    display:block;
+}
+
+
+/*Mobile*/
+@media(min-width: 361px){
+    /*C19MD2-Ocultar la descripción de los articulos*/
+    h3.description{display: none;} 
+
+    /*Ocultar site y el login navbar*/
+    header nav{display:none;}
+
+    /*Unificar ícono de busqueda y barra*/
+    div.bar-i{
+        background-color: white;
+        color: #666;
+        border-radius: 10px;
+        padding: 5px;
+        gap: 3px;
+    }
+}
+/*Tablet*/
+@media (min-width: 576px){
+    h3.description{display: block;} 
+    /*C19MD2-Agregar box shadows para las versiones desktop*/
+    main section article{
+        /*box-shadow: 0px 0px 10px rgb(100,100,100);*/
+        width: 45%;
+    }
+
+    /*Ocultar Burger y mostrar site/navbar*/
+    div.burger-menu{display:none;}
+    header nav{display:flex;}
+
+    /*Mostrar 2 articulos alineados*/
+    main section{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap:5px;
+    }
+
+    header div.bar-i{
+        background-color: #EAC926;
+    }
+    header div i.fa.fa-search{
+        background-color: white;
+        border: 1px solid #000;
+        padding: 6px;
+        margin:3px;
+    }
+    header div.bar{
+        background-color: white;
+        color: #666;
+        font-size: 12px;
+        border: 1px solid #000;
+        padding: 6px;
+    }
+}
+
+/*Desktop*/
+@media (min-width: 992px){
+    /*Ocultar Burger y mostrar site/navbar*/
+    div.burger-menu{display:none;}
+    nav{display:block;}
+
+    .sections{
+        display:flex;
+        flex-wrap: nowrap;
+    }
+}
+
+/*Desktop XL*/
+@media(min-width: 1280px){
+    main section{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    main section article{
+        width: 24%;
+    }
+}
