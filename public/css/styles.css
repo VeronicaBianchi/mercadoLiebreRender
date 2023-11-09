@@ -177,10 +177,8 @@ footer div p.copyright{
     /*Según consigna pero no queda visualmente limpio : font-size: 2em;*/
 }
 
-/*C22MD1*/
 main section article i{
     transition: transform 1s;
-
 }
 
 main section article:hover {
@@ -197,10 +195,7 @@ article:hover h3.description{
 
 /*Mobile*/
 @media(min-width: 361px){
-    /*C19MD2-Ocultar la descripción de los articulos*/
     h3.description{display: none;} 
-
-    /*Ocultar site y el login navbar*/
     header nav{display:none;}
 
     /*Unificar ícono de busqueda y barra*/
@@ -212,20 +207,18 @@ article:hover h3.description{
         gap: 3px;
     }
 }
+
 /*Tablet*/
 @media (min-width: 576px){
     h3.description{display: block;} 
-    /*C19MD2-Agregar box shadows para las versiones desktop*/
     main section article{
         /*box-shadow: 0px 0px 10px rgb(100,100,100);*/
         width: 45%;
     }
 
-    /*Ocultar Burger y mostrar site/navbar*/
     div.burger-menu{display:none;}
     header nav{display:flex;}
 
-    /*Mostrar 2 articulos alineados*/
     main section{
         display:flex;
         flex-wrap: wrap;
@@ -253,7 +246,6 @@ article:hover h3.description{
 
 /*Desktop*/
 @media (min-width: 992px){
-    /*Ocultar Burger y mostrar site/navbar*/
     div.burger-menu{display:none;}
     nav{display:block;}
 
