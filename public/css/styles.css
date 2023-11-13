@@ -26,7 +26,7 @@ header div img{
     flex-wrap: wrap;
     align-items: center;
 }
-header div.bar-i{
+header form.bar-i{
     display:flex;
     align-items: center;
 }
@@ -206,6 +206,13 @@ article:hover h3.description{
         padding: 5px;
         gap: 3px;
     }
+    header form.bar input{
+        border:none;
+    }
+    header form.bar button{
+        border: none;
+        background-color: white;
+    }
 }
 
 /*Tablet*/
@@ -231,13 +238,11 @@ article:hover h3.description{
     }
     header div i.fa.fa-search{
         background-color: white;
-        border: 1px solid #000;
         padding: 6px;
-        margin:3px;
+        border: 1px solid black
     }
-    header div.bar{
+    header form.bar input{
         background-color: white;
-        color: #666;
         font-size: 12px;
         border: 1px solid #000;
         padding: 6px;
